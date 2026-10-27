@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Schedule</title>
+  <style>
+    body {
+      font-size: 1.25rem;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    th,
+    td {
+      border: 1px solid black;
+      padding: 14px 20px;
+    }
+
+    .time {
+      font-size: 1em;
+      padding: 25px 84px;
+    }
+
+    .day-a {
+      font-size: 1em;
+      padding: 25px 50px;
+    }
+
+    .block {
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    .us-history {
+      background-color: #dbeafe;
+    }
+
+    .web-design {
+      background-color: #fce7f3;
+    }
+
+    .algebra {
+      background-color: #dcfce7;
+    }
+
+    .english {
+      background-color: #fef3c7;
+    }
+
+    .lab-chemistry {
+      background-color: #ede9fe;
+    }
+
+    .safety {
+      background-color: #ffedd5;
+    }
+
+    .spanish {
+      background-color: #ccfbf1;
+    }
+
+    .lunch {
+      background-color: #f3f4f6;
+    }
+
+    .alternate-schedules {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .alternate-schedule {
+      font-size: 0.9rem;
+    }
+
+    .alternate-schedule th,
+    .alternate-schedule td {
+      padding: 6px 12px;
+    }
+
+    .alternate-schedule th {
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th class="time" scope="col">Time</th>
+        <th class="day-a" scope="col">Day A</th>
+        <th scope="col">Day B</th>
+        <th scope="col">Day C</th>
+        <th scope="col">Day D</th>
+        <th scope="col">Day E</th>
+        <th scope="col">Day F</th>
+        <th scope="col">Day G</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th class="block" scope="row">Block 1<br>7:30 AM–8:37 AM</th>
+        <td class="us-history">U.S. History<br>Period 1<br>Room A105</td>
+        <td class="web-design">Web Design<br>Period 4<br>Room C104</td>
+        <td class="algebra">Algebra 1<br>Period 3<br>Room B203</td>
+        <td class="english">English 2<br>Period 2<br>Room A14</td>
+        <td class="us-history">U.S. History<br>Period 1<br>Room A105</td>
+        <td class="web-design">Web Design<br>Period 4<br>Room C104</td>
+        <td class="algebra">Algebra 1<br>Period 3<br>Room B203</td>
+      </tr>
+      <tr>
+        <th class="block" scope="row">Block 2<br>8:42 AM–9:49 AM</th>
+        <td class="english">English 2<br>Period 2<br>Room A14</td>
+        <td class="us-history">U.S. History<br>Period 1<br>Room A105</td>
+        <td class="web-design">Web Design<br>Period 4<br>Room C104</td>
+        <td class="algebra">Algebra 1<br>Period 3<br>Room B203</td>
+        <td class="english">English 2<br>Period 2<br>Room A14</td>
+        <td class="us-history">U.S. History<br>Period 1<br>Room A105</td>
+        <td class="web-design">Web Design<br>Period 4<br>Room C104</td>
+      </tr>
+      <tr>
+        <th class="block" scope="row">Block 3<br>9:54 AM–11:01 AM</th>
+        <td class="algebra">Algebra 1<br>Period 3<br>Room B203</td>
+        <td class="english">English 2<br>Period 3<br>Room A14</td>
+        <td class="us-history">U.S. History<br>Period 1<br>Room A105</td>
+        <td class="web-design">Web Design<br>Period 4<br>Room C104</td>
+        <td class="algebra">Algebra 1<br>Period 3<br>Room B203</td>
+        <td class="english">English 2<br>Period 2<br>Room A14</td>
+        <td class="lab-chemistry">Lab Chemistry<br>Period 7<br>Room D106</td>
+      </tr>
+      <tr>
+        <th class="block" scope="row">Lunch<br>11:06 AM–11:41 AM</th>
+        <td class="lunch" colspan="7">Lunch</td>
+      </tr>
+      <tr>
+        <th class="block" scope="row">Block 4<br>11:47 AM–12:54 PM</th>
+        <td class="safety">Safety 10<br>Period 5<br>Room C106</td>
+        <td class="lab-chemistry">Lab Chemistry<br>Period 7<br>Room D106</td>
+        <td class="spanish">Spanish 2<br>Period 6<br>Room B113</td>
+        <td class="safety">Safety 10<br>Period 5<br>Room C106</td>
+        <td class="lab-chemistry">Lab Chemistry<br>Period 5<br>Room D106</td>
+        <td class="spanish">Spanish 2<br>Period 6<br>Room B113</td>
+        <td class="safety">Safety 10<br>Period 5<br>Room C106</td>
+      </tr>
+      <tr>
+        <th class="block" scope="row">Block 5<br>12:59 PM–2:06 PM</th>
+        <td class="spanish">Spanish 2<br>Period 6<br>Room B113</td>
+        <td class="safety">Safety 10<br>Period 5<br>Room C106</td>
+        <td class="lab-chemistry">Lab Chemistry<br>Period 7<br>Room D106</td>
+        <td class="spanish">Spanish 2<br>Period 6<br>Room B113</td>
+        <td class="safety">Safety 10<br>Period 5<br>Room C106</td>
+        <td class="lab-chemistry">Lab Chemistry<br>Period 7<br>Room D106</td>
+        <td class="spanish">Spanish 2<br>Period 6<br>Room B113</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="alternate-schedules">
+    <section>
+      <h2>Half-Day Schedule</h2>
+      <table class="alternate-schedule">
+        <thead>
+          <tr>
+            <th scope="col">Block</th>
+            <th scope="col">Start</th>
+            <th scope="col">End</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Block 1</th><td>7:30 AM</td><td>8:20 AM</td></tr>
+          <tr><th scope="row">Block 2</th><td>8:25 AM</td><td>9:15 AM</td></tr>
+          <tr><th scope="row">Block 3</th><td>9:20 AM</td><td>10:10 AM</td></tr>
+          <tr><th scope="row">Block 4</th><td>10:15 AM</td><td>11:05 AM</td></tr>
+          <tr><th scope="row">Block 5</th><td>11:10 AM</td><td>12:00 PM</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>90-Minute Delay Schedule</h2>
+      <table class="alternate-schedule">
+        <thead>
+          <tr>
+            <th scope="col">Block</th>
+            <th scope="col">Start</th>
+            <th scope="col">End</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Block 1</th><td>9:00 AM</td><td>9:50 AM</td></tr>
+          <tr><th scope="row">Block 2</th><td>9:55 AM</td><td>10:45 AM</td></tr>
+          <tr><th scope="row">Block 3</th><td>10:50 AM</td><td>11:40 AM</td></tr>
+          <tr class="lunch"><th scope="row">Lunch</th><td colspan="2">11:40 AM–12:16 PM</td></tr>
+          <tr><th scope="row">Block 4</th><td>12:21 PM</td><td>1:11 PM</td></tr>
+          <tr><th scope="row">Block 5</th><td>1:16 PM</td><td>2:06 PM</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</body>
+</html>
+
+ 
